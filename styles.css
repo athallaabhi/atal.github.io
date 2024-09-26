@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* General body styling */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #edf2f7; /* Updated background color */
+  color: #2d3748; /* Updated text color */
+  overflow: hidden;
+}
+
+h1 {
+  color: #476392; /* Dark Charcoal for headings */
+  text-align: center;
+  margin-top: 20px;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2em;
+  color: #2d3748; /* Dark Charcoal for paragraph text */
+}
+
+/* Menu Boxes Section */
+.menu-boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns (2 boxes per row) */
+  gap: 20px; /* Space between boxes */
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.menu-box {
+  background-color: #fff; /* Keep white for contrast */
+  border: 2px solid #63b3ed; /* Sky Blue border */
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu-box h2 {
+  color: #63b3ed; /* Sky Blue for headings inside boxes */
+  margin-bottom: 10px;
+}
+
+.menu-box a {
+  text-decoration: none; /* No underline */
+  color: inherit;
+}
+
+.menu-box a:hover {
+  text-decoration: none; /* Ensure no underline on hover */
+  color: inherit;
+}
+
+.menu-box p {
+  color: #2d3748; /* Text color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-boxes {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+}
+
+/* Repeating Image Background */
+.repeating-photo {
+  height: 120px;
+  background-image: url("./photos/athalla.jpg"); /* Path to your image */
+  background-repeat: repeat-x; /* Repeat the image horizontally */
+  background-size: auto 120px; /* Keep the original size of the image */
+  background-position: top center;
+  width: 100vw;
+  margin: 20px 0;
+}
+
+.gambarkiri {
+  width: 330px;
+  position: absolute;
+  bottom: -120px;
+  left: -80px;
+  animation: pulse 3s infinite; /* Infinite pulse animation */
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05); /* Slightly larger */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.gambarkanan {
+  width: 260px;
+  position: absolute;
+  bottom: 130px;
+  right: -15px;
+  animation: pulse 3s infinite; /* Infinite pulse animation */
+}

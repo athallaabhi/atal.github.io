@@ -1,0 +1,409 @@
+/* General body styling for all subdomains */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #edf2f7; /* Updated background color */
+  color: #2d3748; /* Text color */
+}
+
+h1,
+h2 {
+  color: #2d3748; /* Dark Charcoal for headings */
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Common layout for subdomain pages */
+.page-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.page-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.page-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+  color: #2d3748; /* Text color */
+}
+
+.page-container a {
+  color: #63b3ed; /* Sky Blue for links */
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Profile Page Specific Styling */
+#profile-details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.profile-item {
+  flex: 1;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.profile-item p {
+  text-align: center;
+}
+
+/* Hobby Photos and Video Section */
+.hobby-photos {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.hobby-photos h2 {
+  color: #2d3748; /* Heading color */
+  margin-bottom: 20px;
+}
+
+.photo-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between the image and the video */
+}
+
+.hobby-photo {
+  width: 38%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hobby-video {
+  width: 320px; /* Set the width of the video */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: Rounding the edges of the video */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* General body and container styles */
+.page-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Hobby Photos and Video Section */
+.hobby-photos {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.hobby-photos h2 {
+  color: #2d3748; /* Dark Charcoal */
+  margin-bottom: 20px;
+}
+
+.photo-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hobby-photo,
+.hobby-video {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Animation: Scale and elevate on hover */
+.hobby-photo:hover,
+.hobby-video:hover {
+  transform: scale(1.05); /* Slightly enlarge */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a deeper shadow */
+}
+
+/* Back to Home Button Styling */
+.back-to-home {
+  display: inline-block;
+  margin: 30px auto;
+  padding: 15px 25px;
+  background-color: #63b3ed; /* Sky Blue */
+  color: transparent; /* Hide text initially by making it transparent */
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out, color 0.3s ease-in-out; /* Add transition to color */
+  width: max-content; /* Prevent button from expanding */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Show the text on hover */
+.back-to-home:hover {
+  color: white; /* Change text to white when hovered */
+  background-color: #4a5568; /* Darker charcoal for hover */
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+}
+
+.back-to-home:active {
+  transform: translateY(1px); /* Pressed effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+}
+
+/* Profile Page Container */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  min-height: 100vh; /* Full height of the viewport */
+  background-color: #edf2f7; /* Light background color */
+}
+
+/* Profile Card Styling */
+.profile-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 800px; /* Increased max-width for desktop */
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Profile Card Hover Effect */
+.profile-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Shadow effect */
+}
+
+/* Profile Image */
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #63b3ed; /* Sky Blue Border */
+}
+
+/* Profile Info */
+.profile-info h1 {
+  font-size: 2rem;
+  color: #2d3748; /* Dark Charcoal */
+  margin-bottom: 10px;
+}
+
+.profile-info p {
+  font-size: 1.1rem;
+  color: #4a5568; /* Slightly lighter charcoal for text */
+  margin: 5px 0;
+}
+
+/* Hobby Photos and Video Section */
+.hobby-photos {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.hobby-photos h2 {
+  color: #2d3748; /* Heading color */
+  margin-bottom: 20px;
+}
+
+.photo-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between the image and the video */
+}
+
+.hobby-photo {
+  width: 45%; /* Limit width for desktop view */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hobby-video {
+  width: 45%; /* Limit video width for desktop */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .photo-container {
+    flex-direction: column; /* Stack the photo and video vertically on smaller screens */
+  }
+
+  .hobby-photo,
+  .hobby-video {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+/* HOMETOWN
+/* Hometown Page Specific Styling */
+.hometown-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+}
+
+.photo-card {
+  width: 45%; /* Adjust width of each card */
+  text-align: center; /* Center align text */
+}
+
+.hometown-photo {
+  width: 100%; /* Each photo takes the full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  object-fit: cover; /* Ensures the photo fits nicely without distortion */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Photo hover effect */
+.hometown-photo:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a deeper shadow */
+}
+
+.photo-description {
+  margin-top: 10px;
+  color: #4a5568; /* Slightly darker text color for contrast */
+  font-size: 1rem;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .photo-card {
+    width: 100%; /* Full width for smaller screens */
+  }
+}
+
+/* for FOOD
+
+/* Food List Layout */
+.food-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between food items */
+}
+
+.food-item {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between image and text */
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.food-photo {
+  width: 150px; /* Adjust width as needed */
+  height: 150px;
+  object-fit: cover; /* Maintain aspect ratio and fit image within the box */
+  border-radius: 8px; /* Rounded corners for the photo */
+}
+
+.food-info h2 {
+  margin: 0;
+  color: #2d3748; /* Dark Charcoal for headings */
+}
+
+.food-info p {
+  color: #4a5568; /* Slightly lighter text for description */
+  margin-top: 5px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .food-item {
+    flex-direction: column; /* Stack image and text vertically on small screens */
+    text-align: center;
+  }
+
+  .food-photo {
+    width: 100%; /* Full width for smaller screens */
+    height: auto;
+  }
+}
+
+/* FOR TOURIST.HTML
+/* Tourist Places Layout */
+#tourist-places {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between tourist places */
+}
+
+.tourist-place {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between image and text */
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.tourist-photo {
+  width: 150px; /* Adjust width as needed */
+  height: 150px;
+  object-fit: cover; /* Maintain aspect ratio and fit image within the box */
+  border-radius: 8px; /* Rounded corners for the photo */
+}
+
+.tourist-info h2 {
+  margin: 0;
+  color: #2d3748; /* Dark Charcoal for headings */
+}
+
+.tourist-info p {
+  color: #4a5568; /* Slightly lighter text for description */
+  margin-top: 5px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .tourist-place {
+    flex-direction: column; /* Stack image and text vertically on small screens */
+    text-align: center;
+  }
+
+  .tourist-photo {
+    width: 100%; /* Full width for smaller screens */
+    height: auto;
+  }
+}
